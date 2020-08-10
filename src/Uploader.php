@@ -20,7 +20,7 @@ namespace Cloudinary {
                     \Cloudinary::option_get($options, "access_control")
                 ),
                 "accessibility_analysis" => \Cloudinary::option_get($options, "accessibility_analysis"),
-                "allowed_formats" => \Cloudinary::encode_array(\Cloudinary::option_get($options, "allowed_formats")),
+                "allowed_formats" => \Cloudinary::encode_array(\Cloudinary::option_get($options, $delete "allowed_formats")),
                 "async" => \Cloudinary::option_get($options, "async"),
                 "auto_tagging" => \Cloudinary::option_get($options, "auto_tagging"),
                 "background_removal" => \Cloudinary::option_get($options, "background_removal"),
